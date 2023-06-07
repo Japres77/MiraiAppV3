@@ -13,7 +13,7 @@ import android.widget.TextView;
 
 public class MagicTroubleEndPage extends AppCompatActivity {
 
-    TextView tv_result1, tv_result2, tv_score;
+    TextView tv_bubble_correct, tv_bubble_incorrect, tv_bubble_score;
     ImageButton buttonRestart, buttonMenu;
 
     @Override
@@ -34,17 +34,17 @@ public class MagicTroubleEndPage extends AppCompatActivity {
         ConstraintLayout rootLayout = findViewById(R.id.magic_trouble_layout);
         rootLayout.setBackgroundResource(background);
 
-        tv_score = findViewById(R.id.score);
+        tv_bubble_score = findViewById(R.id.score);
         int score = getIntent().getIntExtra("score", 0);
-        tv_score.setText("" + score);
+        tv_bubble_score.setText("" + score);
 
-        tv_result1 = findViewById(R.id.result1);
+        tv_bubble_correct = findViewById(R.id.result1);
         int correct = getIntent().getIntExtra("correct", 0);
-        tv_result1.setText("" + correct);
+        tv_bubble_correct.setText("" + correct);
 
-        tv_result2 = findViewById(R.id.result2);
+        tv_bubble_incorrect = findViewById(R.id.result2);
         int wrong = getIntent().getIntExtra("wrong",0);
-        tv_result2.setText("" + wrong);
+        tv_bubble_incorrect.setText("" + wrong);
 
 
         buttonMenu = findViewById(R.id.button_main_menu);

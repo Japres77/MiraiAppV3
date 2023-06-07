@@ -14,6 +14,7 @@
         android:id="@+id/bubbleContainer"
         android:layout_width="100dp"
         android:layout_height="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/magicguidelinebottom5"
         app:layout_constraintEnd_toStartOf="@+id/guideline5"
         app:layout_constraintStart_toStartOf="@+id/guideline4"
         app:layout_constraintTop_toTopOf="@+id/magicguidelinebottom5" />
