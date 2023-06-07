@@ -93,30 +93,12 @@ public class TopicMainActivity extends AppCompatActivity {
     }
 
     private void displayInfoToast() {
-        String message = "Welcome to the app! Here's how to use it:\n" +
-                "- Step 1: Tap on any study card above\n" +
-                "- Step 2: In the next window \n    " +
-                "-tap on the next button to go to the next lesson" +
-                "\n     -Tap on Previous button to go to previous lesson\n" +
-                "   -Tap on audio button to listen to the correct pronounciation" +
-                "\n    -tap on the return button to go back\n" +
-                "- Step 3: Enjoy using the app!\n\n" +
-                "Learning multiple languages is beneficial because:\n" +
-                "- It enhances communication skills\n" +
-                "- It promotes cultural understanding\n" +
-                "- It opens up career opportunities\n" +
-                "- It improves cognitive abilities";
-
 
         // Create a custom layout for the Toast
         View toastView = getLayoutInflater().inflate(R.layout.custom_toast, null);
         toast = new Toast(getApplicationContext());
         toast.setView(toastView);
         toast.setDuration(Toast.LENGTH_LONG);
-
-        // Set the Toast message
-        TextView textView = toastView.findViewById(R.id.toastMessage);
-        textView.setText(message);
 
         // Set the gravity to center both horizontally and vertically
         toast.setGravity(Gravity.CENTER, 0, 0);

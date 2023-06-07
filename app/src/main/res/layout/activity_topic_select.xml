@@ -190,8 +190,8 @@
                 android:padding="8dp"/>
         </LinearLayout>
         <View
-        android:layout_width="8dp"
-        android:layout_height="18dp" />
+            android:layout_width="8dp"
+            android:layout_height="18dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
