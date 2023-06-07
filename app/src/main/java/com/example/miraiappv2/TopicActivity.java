@@ -36,6 +36,7 @@ public class TopicActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        //new stuff
         //Removes the Title bar from the top of the application for all screens.
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
@@ -66,7 +67,7 @@ public class TopicActivity extends AppCompatActivity {
                     if (fileName.toLowerCase().contains(current.toLowerCase())) {
                         // Found a folder with a name similar to "Greetings"
                         String relativePath = fileName;
-                        Log.d("TAGg", "Relative Path: " + relativePath);
+                        Log.d("TAG", "Relative Path: " + relativePath);
                         path=path+relativePath+"/";
                         break;
                     }
@@ -147,6 +148,9 @@ public class TopicActivity extends AppCompatActivity {
     }
 
     private void playAu(List<String> slideaudio, int currentSlideIndex) {
+        Log.d(TAG, "test " + currentSlideIndex);
+        Log.d(TAG, "test 2 " + currentSlideIndex);
+
         playAudio(slideaudio.get(currentSlideIndex));
     }
     private static final String TAG = "AudioPlayer";
