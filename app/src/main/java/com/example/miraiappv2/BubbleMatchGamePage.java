@@ -266,9 +266,9 @@ public class BubbleMatchGamePage extends AppCompatActivity {
             for (BubbleMatchButton buttonData : bubbleMatchButton) {
                 //Modify the button size
                 int screenWidth = getResources().getDisplayMetrics().widthPixels;
-                int buttonWidth = (int) (screenWidth * 0.43); //Adjust Value accordingly - changes the width of the bubble match buttons
+                int buttonWidth = (int) (screenWidth * 0.40); //Adjust Value accordingly - changes the width of the bubble match buttons
                 int buttonHeight = (int) (buttonWidth * 0.30); //Adjust Value accordingly - changes the height of the bubble match buttons
-                int marginInPixels = (int) (buttonWidth * 0.01); //Adjust Value accordingly - changes the margin of the bubble match butttons
+                int marginInPixels = (int) (buttonWidth * 0.05); //Adjust Value accordingly - changes the margin of the bubble match butttons
                 float desiredTextSizeInDp = 16; //Adjust Value accordingly - desired text size as needed
 
                 //Adjust text size depending on device type
